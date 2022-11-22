@@ -1,29 +1,28 @@
 package com.bridgelabz;
 
 public class TestMaximum {
-	int x, y, z;
+	String x, y, z;
 
-	//constructor testmax
-		public TestMaximum(int x, int y, int z) {
-			this.x = x;
-			this.y = y;
-			this.z = z;
-		}
+	public TestMaximum(String x, String y, String z) {
+		this.x = x;
+		this.y = y;
+		this.z = z;
+	}
 
-	
-		public static Float testMaximum(Float x, Float y, Float z) {
-			Float max = x;// Initializing x as greater value
-			if (y.compareTo(max) > 0)
-				max = y;// as of now y is greater in value
+	public static String testMaximum(String x, String y, String z) {
+		String max = x;// initialising x as greater
+		if (y.compareTo(max) > 0)
+			max = y;// as of now y is greater
 
-			if (z.compareTo(max) > 0)
-				max = z;// now z is greater in value
-			printMax(x, y, z, max);
-			return max;
+		if (z.compareTo(max) > 0)
+			max = z;// now z is greater
+		printMax(x, y, z, max);
+		return max;
 
-		}
+	}
 
-		public static void printMax(Float x, Float y, Float z, Float max) {
-			System.out.printf("The maximum of Given Float values  %s , %s and %s is %s\n", x, y, z, max);
-		}
+	public static void printMax(String x, String y, String z, String max) {
+		System.out.printf("The maximum from string of %s , %s and %s is %s\n", x, y, z, max);
+	}
 }
+
